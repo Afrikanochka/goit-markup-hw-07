@@ -1,6 +1,23 @@
-@import './utils/variables.scss';
+@import './base/common';
+@import './base/container';
+@import './base/section';
 
-body {
-  color: $primary-text-color;
-  background: $primary-bg-color;
-}
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './components/modal';
+@import './components/logo';
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/title';
+@import './components/button';
+@import './components/social-list';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/advanture';
+@import './layout/work';
+@import './layout/user';
+@import './layout/clients';
+@import './layout/footer';
