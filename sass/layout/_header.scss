@@ -69,6 +69,10 @@
   fill: currentColor;
 
   transition: fill var(--timing-duration-function);
+  .auth_nav-item:hover &,
+  .auth_nav-item:focus & {
+    fill: currentColor;
+  }
 }
 .icon-tel {
   width: 10px;
@@ -77,10 +81,6 @@
   fill: currentColor;
 
   transition: fill var(--timing-duration-function);
-}
-
-.icon-mail,
-.icon-tel {
   .auth_nav-item:hover &,
   .auth_nav-item:focus & {
     fill: currentColor;
