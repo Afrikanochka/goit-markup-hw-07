@@ -3,8 +3,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  &__address_mail {
+    margin-top: 9px;
+  }
   &__address_mail,
   &__address_phone {
+    display: inline-block;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;

@@ -363,6 +363,13 @@ img {
 }
 
 /* Page-header */
+.header::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -534,6 +541,11 @@ img {
 }
 
 /* Advanture */
+.advanture-section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .advanture {
   display: flex;
   margin-left: -30px;
@@ -715,7 +727,12 @@ img {
   background-color: #2f303a;
 }
 
+.footer__address_mail {
+  margin-top: 9px;
+}
+
 .footer__address_mail, .footer__address_phone {
+  display: inline-block;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
