@@ -368,7 +368,10 @@ img {
   align-items: center;
 }
 
-.navigation,
+.navigation {
+  display: flex;
+}
+
 .menu {
   display: flex;
 }
@@ -508,12 +511,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.feature__icon {
-  width: 70px;
-  height: 70px;
-}
-
-.feature_title {
+.feature__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -528,6 +526,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 0;
+}
+
+.feature__icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* Advanture */
@@ -658,8 +661,7 @@ img {
   margin-bottom: 10px;
 }
 
-.user__avatar_title,
-.user__avatar_text {
+.user__avatar_title, .user__avatar_text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -713,15 +715,7 @@ img {
   background-color: #2f303a;
 }
 
-.left-side {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footer__address_mail,
-.footer__address_phone {
+.footer__address_mail, .footer__address_phone {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -731,9 +725,7 @@ img {
   transition: color var(--timing-duration-function);
 }
 
-.footer__address_mail:hover, .footer__address_mail:focus,
-.footer__address_phone:hover,
-.footer__address_phone:focus {
+.footer__address_mail:hover, .footer__address_mail:focus, .footer__address_phone:hover, .footer__address_phone:focus {
   color: var(--accent-color);
 }
 
@@ -747,15 +739,6 @@ img {
   margin-bottom: 20px;
 }
 
-.footer__address,
-.footer__wrap {
-  flex-basis: calc((100% - 4 * 30px) / 4);
-}
-
-.right-side {
-  flex-basis: calc((100% - 2 * 30px) / 2);
-}
-
 .footer__list {
   display: flex;
 }
@@ -766,6 +749,10 @@ img {
   margin-right: 10px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer__address, .footer__wrap {
+  flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 .footer__list_link {
@@ -781,6 +768,17 @@ img {
 .footer__list_link:hover, .footer__list_link:focus {
   color: var(--accent-color);
   background-color: var(--accent-color);
+}
+
+.left-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right-side {
+  flex-basis: calc((100% - 2 * 30px) / 2);
 }
 
 .icon-footer {

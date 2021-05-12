@@ -4,19 +4,21 @@
   display: flex;
   align-items: center;
 }
-.navigation,
-.menu {
+.navigation {
   display: flex;
 }
-
-.menu__item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: relative;
-  &:not(:last-child) {
-    margin-right: 50px;
+.menu {
+  display: flex;
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
+
 .menu__link,
 .grid__link {
   font-weight: 500;
@@ -53,16 +55,16 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-.grid__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    color: var(--secondary-text-color);
   }
 }
 
-.grid__link {
-  color: var(--secondary-text-color);
-}
 .grid__icon_mail {
   width: 16px;
   height: 12px;
