@@ -1,11 +1,14 @@
 /* Advanture */
-
-.advanture_item {
+.advanture {
+  display: flex;
+  margin-left: -30px;
+}
+.advanture__item {
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
   position: relative;
 }
-.advanture_text {
+.advanture__text {
   color: var(--subtitle-color);
   font-weight: 700;
   font-size: 14px;

@@ -1,18 +1,18 @@
 /* User */
-.user_section {
+.user__section {
   background-color: #f5f4fa;
 }
-.user_list {
+.user {
   display: flex;
   justify-content: center;
   margin-left: -30px;
 }
-.user_item {
+.user__item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   text-align: center;
 }
-.user-avatar {
+.user__avatar {
   padding-top: 30px;
   padding-bottom: 30px;
   background: var(--primary-bg-color);
@@ -21,49 +21,18 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.avatar_title {
+.user__avatar_title {
   margin-bottom: 10px;
 }
-.avatar_title,
-.avatar_text {
+.user__avatar_title,
+.user__avatar_text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.avatar_text {
+.user__avatar_text {
   font-weight: 400;
   margin-bottom: 16px;
   color: var(--secondary-text-color);
-}
-.avatar_list {
-  display: inline-flex;
-}
-.avatar_item:not(:last-child) {
-  margin-right: 10px;
-}
-.avatar_link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-
-  transition: background-color var(--timing-duration-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-.icon {
-  width: 20px;
-  height: 20px;
-  fill: rgba(175, 177, 184, 1);
-
-  transition: fill var(--timing-duration-function);
-  .avatar_link:hover &,
-  .avatar_link:focus & {
-    fill: #ffffff;
-  }
 }
