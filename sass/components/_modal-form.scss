@@ -83,7 +83,9 @@
     border-radius: 2px;
   }
 }
-
+.modal__link {
+  color: var(--accent-color);
+}
 .modal-btn {
   padding: 10px 56px;
   margin: 0 auto;
@@ -94,6 +96,7 @@
   left: 12px;
   width: 18px;
   height: 18px;
+  fill: var(--primary-text-color);
   transform: translateY(-50%);
 
   transition: fill var(--timing-duration-function);

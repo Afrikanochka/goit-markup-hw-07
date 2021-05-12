@@ -97,8 +97,11 @@
 .footer__form {
   display: flex;
 }
+.form__field {
+  flex-grow: 1;
+}
 .form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background: #2f303a;
 
